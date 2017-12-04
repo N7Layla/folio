@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import { TagCloud } from "react-tagcloud";
-import logo from './images/logo.png';
 import './App.css';
-import globalkitchen from '..public/images/global-kitchen_gameplay.png';
-import artmood from '..public/images/artmood.png';
-import twitchvue from '..public/images/twitchvue.png';
 
 const style = {
   width: '300px',
@@ -48,7 +44,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} width="300px" className="App-logo" alt="logo" />
+          <img src="https://s8.postimg.org/9i3gnfhat/logo.png" width="300px" className="App-logo" alt="logo" />
           <div className="nav-links"><FlatButton><a href='#projects'> projects </a></FlatButton> <FlatButton style={{paddingLeft: '15px', paddingRight: '15px'}}><a href='#exp'> experience </a></FlatButton> <FlatButton><a href='#blog'> blog</a></FlatButton> <FlatButton><a href='#about'> about </a></FlatButton> <FlatButton><a href='#contact'> contact</a></FlatButton> <FlatButton><a href='#home'>home</a></FlatButton></div>
         </header>
         <div className="content">
@@ -65,7 +61,7 @@ class App extends Component {
               <CardMedia
                 overlayContentStyle={overlayContentStyle}
                 overlay={<CardTitle title="Global Kitchen" subtitle="A restaurant simulator game celebrating international cuisines." />}>
-                <img src={globalkitchen} alt="Global Kitchen" />
+                <img src="https://s8.postimg.org/q5uypxjs5/global-kitchen_gameplay.png" alt="Global Kitchen" />
               </CardMedia>
               <CardTitle subtitle="Co-Developer" />
               <CardText>
@@ -80,7 +76,7 @@ class App extends Component {
               <CardMedia
                 overlayContentStyle={overlayContentStyle}
                 overlay={<CardTitle title="ARTmood" subtitle="Art on demand, by mood." />}>
-                <img src={artmood} alt="ARTmood" />
+                <img src="https://s8.postimg.org/6b8x3sp51/artmood.png" alt="ARTmood" />
               </CardMedia>
               <CardTitle subtitle="Developer" />
               <CardText>
@@ -95,7 +91,7 @@ class App extends Component {
               <CardMedia
                 overlayContentStyle={overlayContentStyle}
                 overlay={<CardTitle title="Twitch Explorer" subtitle="Single page Twitch viewer." />}>
-                <img src={twitchvue} alt="Twitch Explorer" />
+                <img src="https://s8.postimg.org/k4x9sv4vp/twitchvue.png" alt="Twitch Explorer" />
               </CardMedia>
               <CardTitle subtitle="Developer" />
               <CardText>
