@@ -2,7 +2,9 @@
   "name": "folio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://n7layla.github.io/folio",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "material-ui": "^0.19.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -10,6 +12,8 @@
     "react-tagcloud": "^1.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
